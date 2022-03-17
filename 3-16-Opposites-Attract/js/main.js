@@ -1,21 +1,14 @@
 // Description:
-// Create a function that converts US dollars (USD) to Chinese Yuan (CNY) . 
-// The input is the amount of USD as an integer, and the output should be a string that states the amount of Yuan followed by 'Chinese Yuan'
+// Timmy & Sarah think they are in love, but around where they live, they will only know once they pick a flower each. 
+// If one of the flowers has an even number of petals and the other has an odd number of petals it means they are in love.
 
-// Examples (Input -> Output)
-// * 15  -> '101.25 Chinese Yuan'
-// * 465 -> '3138.75 Chinese Yuan'
-// The conversion rate you should use is 6.75 CNY for every 1 USD. 
-// All numbers should be represented as a string with 2 decimal places. (e.g. "21.00" NOT "21.0" or "21")
+// Write a function that will take the number of petals of each flower and return true if they are in love and false if they aren't.
 
-function usdcny(usd) {
-    let cny = usd * 6.75;
-    return cny.toFixed(2) + " Chinese Yuan";
+function lovefunc(flower1, flower2) {
+    return flower1 % 2 !== flower2 % 2;
 }
+// function lovefunc(flower1, flower2) {
+//     return (flower1 + flower2) % 2 === 1
+// }
 
-// usdcny = $ => `${($ * 6.75).toFixed(2)} Chinese Yuan`;
-
-// function usdcny(usd) {
-//     return (usd * 6.75).toFixed(2) + " Chinese Yuan";
-//   }
-  
+// let lovefunc = (f1, f2) => !!((f1+f2)%2)
