@@ -15,3 +15,15 @@ function solution(str) {
 //         o += s[i];
 //     return o;
 // }
+
+function reverse(str) {
+    return str.split('').reverse().join('')
+}
+
+const reverse = str => str.split('').reverse().join('')
+
+function reverseString(str) {
+    return str.split('').reverse().join('')
+}
+
+const reverseyWersey = str => str.split('').reverse().join('')
